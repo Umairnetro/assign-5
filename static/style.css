@@ -1,0 +1,161 @@
+:root {
+  --primary-color: #066ac9;
+  --secondary-color: #24292d;
+  --gray-color: #4040416b;
+}
+
+/* Navigation */
+.navbar-brand {
+  width: 34%;
+}
+
+/* Navigation: logo */
+.navbar-brand .logo,
+.logo {
+  width: 150px;
+}
+
+/* Navigation: Search bar */
+.side__content .search-bar {
+  width: 100%;
+  border: 1px solid var(--gray-color);
+}
+
+.side__content .search-bar input {
+  border: none;
+  outline: none;
+  flex-grow: 2;
+}
+
+/* Navigation: icon */
+.side__content .search-bar i {
+  flex-grow: 1;
+}
+
+/* Navigation: Profile */
+.side__content .profile {
+  height: 40px;
+  width: 40px;
+  /* overflow: hidden; */
+}
+
+.side__content .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Hero Section */
+section {
+  padding: 60px 0;
+}
+
+/* Hero Section: Content */
+.hero-content .font__size {
+  font-size: 3.3rem;
+}
+
+.hero-content .btn__primary {
+  background-color: #dc354642;
+}
+
+.hero-content .btn__primary:hover {
+  background-color: #dc3546;
+}
+
+.hero-content .btn__play i {
+  background-color: var(--primary-color);
+  width: 45px;
+  height: 45px;
+  border: 5px solid #3c7fbe;
+  transition: all 0.1s;
+  border-radius: 50%;
+}
+
+.hero-content .btn__play i::before {
+  color: white;
+}
+
+.hero-content .btn__play:hover i {
+  border: 0px solid #5094d4;
+  inset: 10px;
+  transition: all 0.1s;
+}
+
+/* field Section */
+.field__icons {
+  font-size: 2.7rem;
+}
+
+/* First field */
+.bg__yellowShade {
+  background-color: #fef6e0;
+}
+
+.color__yellow {
+  color: #f7c32e;
+}
+
+/* Second field */
+.bg__blueShade {
+  background-color: #e8ebed;
+}
+
+.color__blue {
+  color: #1d3b53;
+}
+
+/* Third field */
+.bg__purpleShade {
+  background-color: #f0ebf9;
+}
+
+.color__purple {
+  color: #6f42c1;
+}
+
+/* Fourth field */
+.bg__lightShade {
+  background-color: #e7f6f8;
+}
+
+/* More Color */
+.color__lightblue {
+  color: #17a2b8;
+}
+
+/* More Color */
+.bg__lightblue {
+  background-color: #17a2b8;
+}
+
+.color__orange {
+  color: #ec5f00;
+}
+
+.bg__greenshade {
+  background-color: #e6f8f3;
+}
+
+.bg__lightgray {
+  background-color: #e6e6e6;
+}
+
+.color__seagreen {
+  color: #6ad6b6;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-content .font__size {
+    font-size: 2.7rem;
+  }
+
+  .para__size {
+    font-size: 1rem !important;
+  }
+
+  .verified__size {
+    font-size: 0.8rem;
+  }
+}

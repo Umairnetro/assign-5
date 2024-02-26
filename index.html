@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container-lg align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="logo" src="static/img/logo.svg" alt="Bootstrap">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Toggler -->
+            <div class="collapse navbar-collapse ps-4" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-primary active" aria-current="page" href="#hero">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#">Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#">Megamenu</a>
+                    </li>
+                </ul>
+                <div class="side__content d-flex align-items-center justify-content-between gap-1">
+                    <div
+                        class="search-bar px-2 py-1 rounded w-75 d-flex justify-content-between align-items-center d-sm-none d-md-flex">
+                        <input class="w-75" type="search" placeholder="Search here">
+                        <i class="fa-solid fa-magnifying-glass text-muted"></i>
+                    </div>
+                    <div class="profile d-flex justify-content-center align-items-center">
+                        <img role="button" src="static/img/01.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-7 col-xl-6">
+                    <div class="hero-content text-center text-lg-start">
+                        <h1 class="fw-bold mb-4 font__size pe-sm-5">Limitless learning at your fingertips</h1>
+                        <p class="text-muted fs-5 fw-medium mb-4 para__size">Online learning and teaching marketplace
+                            with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.</p>
+                        <div class="d-flex justify-content-lg-start justify-content-center">
+                            <ul class="list-unstyled d-flex gap-4">
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="m-0 fw-medium text-muted verified__size">Learn with experts</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="m-0 fw-medium text-muted verified__size">Learn with experts</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="m-0 fw-medium text-muted verified__size">Learn with experts</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-lg-start mt-3 gap-2">
+                            <!-- Join Button -->
+                            <a href="#courses" class="btn btn-outline-danger btn-lg py-2 me-4 border-0 btn__primary">
+                                <div class="fs-6 px-2 py-1">
+                                    Get Started
+                                </div>
+                            </a>
+
+                            <!-- Play Button -->
+                            <a href="#course__videos"
+                                class="text-decoration-none d-flex align-items-center btn__play gap-2">
+                                <i class="fa-solid fa-play d-flex justify-content-center align-items-center"></i>
+                                <p class="m-0 text-muted">Watch video</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-6">
+                    <div class="d-flex justify-content-end mt-5 mt-lg-0">
+                        <img src="static/img/Group 15.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fields -->
+    <section class="fields">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- First field -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 g-3">
+                        <div class="bg__yellowShade rounded d-flex justify-content-center gap-4 py-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-tv field__icons color__yellow"></i>
+                            </div>
+                            <div class="i-content d-flex flex-column justify-content-center ">
+                                <h4 class="m-0">10K</h4>
+                                <p class="m-0">Online Courses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second field -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 g-3">
+                        <div class="bg__blueShade rounded d-flex justify-content-center gap-4 py-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-user-tie field__icons color__blue"></i>
+                            </div>
+                            <div class="i-content d-flex flex-column justify-content-center ">
+                                <h4 class="m-0">200+</h4>
+                                <p class="m-0">Expert Tutors</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Third field -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 g-3">
+                        <div class="bg__purpleShade rounded d-flex justify-content-center gap-4 py-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-user-graduate field__icons color__purple"></i>
+                            </div>
+                            <div class="i-content d-flex flex-column justify-content-center ">
+                                <h4 class="m-0">60K+</h4>
+                                <p class="m-0">Online Students</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fourth field -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 g-3">
+                        <div class="bg__lightShade rounded d-flex justify-content-center gap-4 py-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-circle-check field__icons color__lightblue"></i>
+                            </div>
+                            <div class="i-content d-flex flex-column justify-content-center ">
+                                <h4 class="m-0">6K+</h4>
+                                <p class="m-0">Certified Courses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+        <div class="container-fluid">
+            <div class="container text-center">
+                <h3 class="fw-bolder fs-1">Most Popular Courses</h2>
+                    <p class="text-muted fs-6">Choose from hundreds of courses from specialist organizations</p>
+
+                    <div class="container py-3 my-4 rounded bg__lightShade">
+                        <ul
+                            class="navbar-nav d-flex flex-row flex-wrap justify-content-center gap-5 text-primary fw-semibold">
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link text-white rounded bg-primary py-2 px-3">Web design</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Development</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Graphic Design</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Marketing</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Finance</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+
+
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 1 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/sketch.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="card__level bg__purpleShade color__purple px-2 py-1 rounded">All
+                                            level</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Sketch from A to Z: for app designer</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Proposal indulged no do sociable he
+                                        throwing settling.</p>
+
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">12h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">15 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 2 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/photoshop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small
+                                            class="card__level bg__greenshade color__seagreen px-2 py-1 rounded">Beginner</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Graphic Design Masterclass</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Rooms oh fully taken by worse do
+                                        Points afraid but may end Rooms...</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">9h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">65 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 3 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/figma.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small
+                                            class="card__level bg__greenshade color__seagreen px-2 py-1 rounded">Beginner</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Create a Design System in Figma</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Rooms oh fully taken by worse do.
+                                        Points afraid but may end afraid...</p>
+
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">5h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">32 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 4 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/react.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small
+                                            class="card__level bg__greenshade color__seagreen px-2 py-1 rounded">Beginner</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Deep Learning with React-Native</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Far advanced settling say finished
+                                        raillery. Offered chiefly farther.</p>
+
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">18h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">99 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Row-2 -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 5 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/html.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="card__level bg__purpleShade color__purple px-2 py-1 rounded">All
+                                            level</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Sketch from A to Z: for app designer</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Proposal indulged no do sociable he
+                                        throwing settling.</p>
+
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">12h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">15 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 6 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/css.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small
+                                            class="card__level bg__greenshade color__seagreen px-2 py-1 rounded">Beginner</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Graphic Design Masterclass</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Rooms oh fully taken by worse do
+                                        Points afraid but may end Rooms...</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">9h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">65 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 7 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/invision.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="card__level bg__purpleShade color__purple px-2 py-1 rounded">All
+                                            level</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Create a Design System in Figma</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Rooms oh fully taken by worse do.
+                                        Points afraid but may end afraid...</p>
+
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">5h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">32 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                        <!-- Card 8 -->
+                        <div class="card shadow border-0 h-100" style="width: 18rem;">
+                            <img src="static/img/javascript.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="card__level bg__purpleShade color__purple px-2 py-1 rounded">All
+                                            level</small>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Deep Learning with React-Native</h5>
+                                    <p class="card-text text-muted fst-normal mb-1">Far advanced settling say finished
+                                        raillery. Offered chiefly farther.</p>
+
+                                </div>
+                                <div class="rating">
+                                    <div class="star text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p class="d-inline text-muted ms-2">4.0/5.0</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">18h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">99 lectures</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div
+            class="container bg__lightblue rounded py-5 px-5 d-flex flex-wrap text-center text-lg-start justify-content-xl-between justify-content-center align-items-center gap-4">
+            <div class="instructor text-white">
+                <h3 class="fw-bold h2">Become an Instructor!</h3>
+                <P>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy <br> man
+                    children rejoiced. Yet uncommonly his ten who diminution astonished.</P>
+            </div>
+            <a href="#" class="btn btn-warning flex-md-row">
+                <p class="m-0 py-1 px-1">Start Teaching Today</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Courses Videos -->
+    <section id="course__videos">
+        <div class="container-fluid">
+            <div class="heading text-center">
+                <h3 class="fs-1 fw-bolder">Our Trending Courses</h3>
+                <p class="text-muted">Check out most trending courses in the market</p>
+            </div>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Slider - 1 -->
+                        <div class="card shadow border-0 h-100">
+                            <img src="static/img/14.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="level">
+                                            <small
+                                                class="card__level bg__purpleShade color__purple px-2 py-1 rounded">Development</small>
+
+                                            <small class="card__level bg-dark text-white ms-2 px-2 py-1 rounded">All
+                                                level</small>
+                                        </div>
+                                        <i class="fa-regular fa-bookmark"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Angular – The Complete Guide (2021 Edition)</h5>
+                                </div>
+                                <div class="rating">
+                                    <div class="star d-flex align-items-center my-2 text-warning">
+                                        <p class="d-inline text-muted me-1 m-0">4.0</p>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p class="d-inline text-muted ms-1 m-0">(2000)</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start gap-3">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">18h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">99 lectures</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="teacher__about d-flex justify-content-between align-items-center">
+                                        <div class="profile">
+                                            <img src="static/img/01.jpg" alt="" class="rounded" style="width:2.6rem;">
+                                            <small class="m-0 fs-6 fw-semibold">Seria Stevens</small>
+                                        </div>
+                                        <a
+                                            class="buying btn btn-sm btn-outline-success py-2 px-3 border-0 bg__greenshade">
+                                            <i class="fa-solid fa-cart-shopping me-1"></i>
+                                            <small class="fs-6">Add to cart</small>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Slider - 2 -->
+                        <div class="card shadow border-0 h-100">
+                            <img src="static/img/15.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="level">
+                                            <small
+                                                class="card__level bg__greenshade color__seagreen px-2 py-1 rounded">Design</small>
+
+                                            <small class="card__level bg-dark text-white ms-2 px-2 py-1 rounded">All
+                                                level</small>
+                                        </div>
+                                        <i class="fa-regular fa-bookmark"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Angular – The Complete Guide (2021 Edition)</h5>
+                                </div>
+                                <div class="rating">
+                                    <div class="star d-flex align-items-center my-2 text-warning">
+                                        <p class="d-inline text-muted me-1 m-0">4.0</p>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p class="d-inline text-muted ms-1 m-0">(2000)</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start gap-3">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">18h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">99 lectures</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="teacher__about d-flex justify-content-between align-items-center">
+                                        <div class="profile">
+                                            <img src="static/img/04.jpg" alt="" class="rounded" style="width:2.6rem;">
+                                            <small class="m-0 fs-6 fw-semibold">Marlin Stevens</small>
+                                        </div>
+                                        <a
+                                            class="buying btn btn-sm btn-outline-success py-2 px-3 border-0 bg__greenshade">
+                                            <i class="fa-solid fa-cart-shopping me-1"></i>
+                                            <small class="fs-6">Add to cart</small>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Slider - 3 -->
+                        <div class="card shadow border-0 h-100">
+                            <img src="static/img/16.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="content">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="level">
+                                            <small
+                                                class="card__level bg__greenshade color__seagreen px-2 py-1 rounded">Design</small>
+
+                                            <small
+                                                class="card__level bg-dark text-white ms-2 px-2 py-1 rounded">Beginner</small>
+                                        </div>
+                                        <i class="fa-regular fa-bookmark"></i>
+                                    </div>
+                                    <h5 class="card-title mt-2">Time Management Mastery: Do More, Stress Less</h5>
+                                </div>
+                                <div class="rating">
+                                    <div class="star d-flex align-items-center my-2 text-warning">
+                                        <p class="d-inline text-muted me-1 m-0">4.0</p>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p class="d-inline text-muted ms-1 m-0">(2000)</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start gap-3">
+                                        <div class="course__timing">
+                                            <i class="fa-regular fa-clock text-danger"></i>
+                                            <small class="text-muted m-0">18h 56m</small>
+                                        </div>
+                                        <div class="course__lectures">
+                                            <i class="fa-solid fa-table color__orange"></i>
+                                            <small class="text-muted m-0">99 lectures</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="teacher__about d-flex justify-content-between align-items-center">
+                                        <div class="profile">
+                                            <img src="static/img/09.jpg" alt="" class="rounded" style="width:2.6rem;">
+                                            <small class="m-0 fs-6 fw-semibold">Lori Stevens</small>
+                                        </div>
+                                        <a
+                                            class="buying btn btn-sm btn-outline-success py-2 px-3 border-0 bg__greenshade">
+                                            <i class="fa-solid fa-cart-shopping me-1"></i>
+                                            <small class="fs-6">Add to cart</small>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedbacks Section -->
+    <section class="feedbacks bg-light">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6 d-none d-md-block">
+                        <img src="static/img/Group 25.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="feedback-content text-center text-md-start">
+                            <h3 class="h1 fw-bolder mb-3">Some valuable feedback from our students</h3>
+                            <p class="text-muted">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how.</p>
+                            <a href="" class="btn btn-primary">
+                                <p class="m-0 fw-semibold py-1 px-1">View Reviews</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container-fluid pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="discription">
+                            <img class="logo mb-3" src="static/img/logo.svg" alt="" style="width:12rem;">
+                            <p class="text-muted">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+                        </div>
+                        <div class="social_media_icons d-flex gap-2">
+                            <!-- Facebook -->
+                            <a class="facebook btn bordern shadow-sm px-3">
+                                <i class="fa-brands fa-facebook-f" style="color: #1873eb;"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a class="facebook btn bordern shadow-sm px-3">
+                                <i class="fa-brands fa-instagram" style="color: #f024ca"></i>
+                            </a>
+                            
+                            <!-- X -->
+                            <a class="facebook btn bordern shadow-sm px-3">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a class="facebook btn bordern shadow-sm px-3">
+                                <i class="fa-brands fa-linkedin" style="color: #0a66c2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Java Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d16a401f11.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
